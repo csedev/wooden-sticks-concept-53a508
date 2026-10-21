@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>2026 green fee rates and the Player's Badge | Wooden Sticks Golf Club</title>
+<meta name="description" content="See 2026 green fees at Wooden Sticks, from $180 online. Every round includes 18 holes, a shared power cart, practice facilities and a post-round meal.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="2026 green fee rates and the Player's Badge | Wooden Sticks Golf Club">
+<meta property="og:description" content="See 2026 green fees at Wooden Sticks, from $180 online. Every round includes 18 holes, a shared power cart, practice facilities and a post-round meal.">
+<meta property="og:image" content="../../assets/og/golf-green-fee-rates.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/icon-32.png"><link rel="apple-touch-icon" href="../../assets/brand/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&amp;family=Manrope:wght@400;500;600&amp;display=swap">
+<link rel="preload" as="image" href="../../assets/media/2f6d7616-6b58-4fe9-8464-b7a778bd5a30-9153a02da632/800.webp" fetchpriority="high">
+<link rel="stylesheet" href="../../assets/base.css">
+<link rel="stylesheet" href="../../assets/system.css">
+<style>/* Golf rates page */
+.page-head__fine {
+  margin-top: var(--space-s);
+  font-size: var(--step--1);
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* Current green fees: notes beside the table */
+.fees {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--grid-gap);
+  align-items: start;
+}
+.fees__text { grid-column: 1 / span 4; }
+.fees__text p { max-width: 36ch; }
+.fees__table { grid-column: 6 / span 7; }
+.fees .rates__note { max-width: 60ch; }
+.rates-table .rates-group th {
+  padding: 0 var(--space-s) var(--space-xs);
+  border-bottom: 1px solid var(--c-rule);
+  text-align: center;
+  color: var(--c-text);
+}
+.rates-table .rates-group td { border: 0; }
+.rates-table tbody th { padding-block: var(--space-m); }
+.rates-table tbody td { padding-block: var(--space-m); font-size: var(--step-1); }
+.price--online {
+  font-weight: 600;
+  color: var(--primary);
+}
+.rates-tag {
+  display: inline-block;
+  margin: 0 0 0 var(--space-2xs);
+  padding: 0.1875rem 0.5rem;
+  border: 1px solid currentColor;
+  border-radius: var(--radius);
+  font-size: var(--step--2);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  line-height: 1.3;
+  text-transform: uppercase;
+  vertical-align: 0.15em;
+  color: var(--primary);
+}
+
+/* Player's Badge: dining split under the includes */
+.badge-meal { margin-top: var(--space-3xl); }
+.badge-meal h3 { margin-bottom: var(--space-m); }
+
+/* Seasonal periods */
+.periods {
+  margin: var(--space-l) 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--c-rule);
+}
+.period {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: var(--space-m);
+  align-items: baseline;
+  padding-block: var(--space-s);
+  border-bottom: 1px solid var(--c-rule);
+}
+.period__dates {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--c-text);
+}
+.period__price {
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--c-heading);
+}
+.period p {
+  grid-column: 1 / -1;
+  margin: var(--space-3xs) 0 0;
+  font-size: 0.9375rem;
+  color: var(--c-muted);
+}
+@media (min-width: 1080px) {
+  .seasonal .split--reverse .split__text { grid-column: 1 / span 5; }
+  .seasonal .split--reverse .split__media { grid-column: 7 / span 6; }
+}
+
+/* Other ways to play: one ruled row per option */
+.ways {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--c-rule);
+}
+.way {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--grid-gap);
+  align-items: baseline;
+  padding-block: var(--space-l);
+  border-bottom: 1px solid var(--c-rule);
+}
+.way__title { grid-column: 1 / span 4; margin: 0; }
+.way__link {
+  color: var(--c-heading);
+  text-decoration-line: underline;
+  text-decoration-color: var(--rule-strong);
+  text-underline-offset: 0.2em;
+}
+.way__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+.way:hover .way__link {
+  color: var(--secondary);
+  text-decoration-color: currentColor;
+}
+.way__link:focus-visible { outline: none; }
+.way:has(.way__link:focus-visible) {
+  outline: 2px solid var(--c-focus);
+  outline-offset: 4px;
+}
+.way__price { grid-column: 5 / span 3; margin: 0; }
+.way__from {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--step-3);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: var(--c-heading);
+}
+.way__qual {
+  display: block;
+  margin-top: var(--space-2xs);
+  font-size: var(--step--1);
+  color: var(--c-muted);
+}
+.way__text {
+  grid-column: 8 / span 5;
+  margin: 0;
+  font-size: 0.9375rem;
+}
+
+/* Booking terms band */
+.band--terms p { font-size: var(--step-0); margin-bottom: var(--space-xs); }
+.band--terms .eyebrow { color: var(--white); }
+
+@media (max-width: 1079.98px) {
+  .fees__text,
+  .fees__table { grid-column: 1 / -1; }
+  .fees__table { margin-top: var(--space-2xl); }
+  .fees__text p { max-width: var(--measure); }
+}
+@media (max-width: 899.98px) {
+  .way { grid-template-columns: minmax(0, 1fr); }
+  .way__title,
+  .way__price,
+  .way__text { grid-column: 1 / -1; }
+  .way__price { margin-top: var(--space-s); }
+  .way__text { margin-top: var(--space-xs); }
+}
+@media (max-width: 699.98px) {
+  .rates-table tbody td { font-size: var(--step-0); }
+  .rates-table tbody th { padding-block: 0 var(--space-2xs); }
+  .rates-table tbody td { padding-block: 0.125rem; }
+}
+
+/* Revision 1 */
+/* Hero: full-bleed aerial */
+.hero--rates .hero__intro { max-width: 52ch; }
+.hero__fine {
+  margin-top: var(--space-s);
+  font-size: var(--step--1);
+  font-weight: 600;
+  color: var(--white);
+}
+
+/* Prices: one typeface, one size, tabular figures */
+.price,
+.rates-table tbody td.price,
+.way__from {
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: "lnum" 1, "tnum" 1;
+  color: var(--c-heading);
+}
+.rates-table tbody td.price { color: var(--c-text); }
+.rates-table tbody td.price--online { color: var(--primary); font-weight: 500; }
+.rates-table tbody th,
+.rates-table tbody td { vertical-align: baseline; }
+
+/* Green fees on phones: one block per day, label beside price */
+@media (max-width: 699.98px) {
+  .rates-table tbody tr { padding-block: var(--space-m); }
+  .rates-table tbody tr > :first-child { padding-bottom: var(--space-xs); }
+  .rates-table td[data-label] {
+    align-items: baseline;
+    min-height: 2.5rem;
+    padding-block: 0.25rem;
+  }
+  .rates-table td[data-label]::before {
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+}
+
+/* Buttons: no doubled spacing, equal width when stacked */
+.split__text .button-row .button { margin-top: 0; }
+@media (max-width: 599.98px) {
+  .button-row .button { flex: 1 1 100%; }
+}
+
+/* Full-bleed course aerial between sections */
+.vista {
+  position: relative;
+  aspect-ratio: 21 / 9;
+  max-height: 82svh;
+  overflow: hidden;
+  background: var(--shade-deep);
+}
+.vista img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+@media (max-width: 899.98px) {
+  .vista { aspect-ratio: 3 / 2; }
+}
+
+/* Seasonal rates: photo top-aligned, spanning the list */
+@media (min-width: 1080px) {
+  .seasonal .split { align-items: start; }
+  .seasonal .split__media { aspect-ratio: 4 / 5; }
+}
+
+/* Footer social: even columns, 44px tap height */
+.footer-social ul {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  column-gap: var(--space-l);
+  row-gap: 0;
+  margin-inline: 0;
+}
+.site-footer .footer-social a {
+  min-width: 44px;
+  min-height: 44px;
+  padding-inline: 0;
+  justify-content: flex-start;
+}</style>
+<link rel="stylesheet" href="../../assets/preview.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"GolfCourse","name":"Wooden Sticks Golf Club","telephone":"+1-905-852-4379","address":{"@type":"PostalAddress","addressLocality":"Uxbridge","addressRegion":"ON","addressCountry":"CA"}}</script>
+</head>
+<body>
+<nav class="pv-bar" aria-label="Design preview">
+<a class="pv-i" href="../../index.html" aria-label="Wooden Sticks Golf Club design concept, version 1: overview" data-tip="Wooden Sticks Golf Club design concept, version 1"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg></a>
+<a class="pv-i" rel="prev" href="../../home/index.html" aria-label="Previous page: Home" data-tip="Previous: Home (←)"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m15 18-6-6 6-6"/></svg></a><a class="pv-i" rel="next" href="../../the-course/index.html" aria-label="Next page: The Course" data-tip="Next: The Course (→)"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></a>
+<button type="button" class="pv-i" id="pv-pages" aria-expanded="false" aria-controls="pv-pages-menu" aria-label="Pages (now: Golf · Golf Rates)" data-tip="Pages · Golf · Golf Rates"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h.01"/><path d="M3 18h.01"/><path d="M3 6h.01"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M8 6h13"/></svg></button>
+<div class="pv-menu" id="pv-pages-menu" hidden><p class="pv-group">Homepage</p><ul><li><a href="../../home/index.html">Home</a></li></ul><p class="pv-group">Golf</p><ul><li><a href="../../golf/green-fee-rates/index.html" aria-current="page">Golf Rates</a></li></ul><p class="pv-group">The Course</p><ul><li><a href="../../the-course/index.html">The Course</a></li></ul></div>
+<span class="pv-sep" aria-hidden="true"></span>
+<a class="pv-i" href="../../design-system/index.html" aria-label="Design system" data-tip="Design system"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg></a>
+<button type="button" class="pv-i" id="pv-mobile" aria-pressed="false" aria-label="Phone width" data-tip="Phone width"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg></button>
+<button type="button" class="pv-i" id="pv-structure" aria-pressed="false" aria-label="Structure only" data-tip="Structure only"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 3a2 2 0 0 0-2 2"/><path d="M19 3a2 2 0 0 1 2 2"/><path d="M21 19a2 2 0 0 1-2 2"/><path d="M5 21a2 2 0 0 1-2-2"/><path d="M9 3h1"/><path d="M9 21h1"/><path d="M14 3h1"/><path d="M14 21h1"/><path d="M3 9v1"/><path d="M21 9v1"/><path d="M3 14v1"/><path d="M21 14v1"/></svg></button>
+<span class="pv-grow" aria-hidden="true"></span>
+<button type="button" class="pv-i pv-approve" id="pv-approve" aria-label="Approve this version" data-tip="Approve this version"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg></button>
+</nav>
+<header class="site-header site-header--over-hero" data-header><a class="skip-link" href="#main">Skip to main content</a><div class="utility-bar"><div class="utility-inner"><nav class="utility-nav" aria-label="Utility"><ul class="utility-list"><li><a href="tel:+19058524379">+1-905-852-4379</a></li></ul></nav></div></div><div class="header-bar"><div class="header-inner"><a class="brand" href="../../home/index.html" aria-label="Wooden Sticks Golf Club home"><img class="brand-logo brand-logo--on-dark" src="../../assets/brand/logo-on-dark.png" alt="" width="174" height="142"><img class="brand-logo brand-logo--on-light" src="../../assets/brand/logo-on-light.png" alt="" width="174" height="142"></a><nav class="main-nav" id="main-nav" aria-label="Main"><ul class="nav-list"><li class="nav-item has-children"><a class="nav-link is-current" href="#" data-unbuilt="1">Golf</a><button class="submenu-toggle" type="button" data-submenu-toggle aria-expanded="false" aria-controls="sub-golf"><span class="sr-only">Golf pages</span></button><ul class="submenu" id="sub-golf"><li class="nav-item"><a class="nav-link is-current" href="../../golf/green-fee-rates/index.html" aria-current="page">Golf Rates</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Book a Tee Time</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Gift Cards &amp; Specials</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Lessons, Clinics &amp; Camps</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Memberships</a></li></ul></li><li class="nav-item has-children"><a class="nav-link" href="../../the-course/index.html">The Course</a><button class="submenu-toggle" type="button" data-submenu-toggle aria-expanded="false" aria-controls="sub-the-course"><span class="sr-only">The Course pages</span></button><ul class="submenu" id="sub-the-course"><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Scorecard</a></li></ul></li><li class="nav-item has-children"><a class="nav-link" href="#" data-unbuilt="1">Accommodations</a><button class="submenu-toggle" type="button" data-submenu-toggle aria-expanded="false" aria-controls="sub-accommodations"><span class="sr-only">Accommodations pages</span></button><ul class="submenu" id="sub-accommodations"><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Cabins &amp; Suites</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Quad Cabins</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Single Suites</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Couples Retreats</a></li></ul></li><li class="nav-item has-children"><a class="nav-link" href="#" data-unbuilt="1">Dining</a><button class="submenu-toggle" type="button" data-submenu-toggle aria-expanded="false" aria-controls="sub-dining"><span class="sr-only">Dining pages</span></button><ul class="submenu" id="sub-dining"><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Menus</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Private Events</a></li></ul></li><li class="nav-item has-children"><a class="nav-link" href="#" data-unbuilt="1">Golf Events</a><button class="submenu-toggle" type="button" data-submenu-toggle aria-expanded="false" aria-controls="sub-golf-events"><span class="sr-only">Golf Events pages</span></button><ul class="submenu submenu--mega" id="sub-golf-events"><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Tournaments</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Group Packages</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Corporate Golf Programs</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Golf Leagues</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Meeting Packages</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Events &amp; Sales Team</a></li></ul></li><li class="nav-item has-children"><a class="nav-link" href="#" data-unbuilt="1">About</a><button class="submenu-toggle" type="button" data-submenu-toggle aria-expanded="false" aria-controls="sub-about"><span class="sr-only">About pages</span></button><ul class="submenu" id="sub-about"><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Contact &amp; Hours</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">News &amp; Events</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Community &amp; Charity</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Careers</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Join the E-Club</a></li></ul></li></ul></nav><a class="header-cta" href="#" aria-label="Book a Tee Time" data-unbuilt="1">Book a Tee Time</a><button class="menu-toggle" type="button" data-menu-toggle aria-controls="main-nav" aria-expanded="false"><span class="menu-toggle-label">Menu</span></button></div></div></header>
+<main id="main">
+<section class="hero hero--rates" data-hero="">
+  <div class="hero__media">
+    <picture><source type="image/avif" srcset="../../assets/media/2f6d7616-6b58-4fe9-8464-b7a778bd5a30-9153a02da632/480.avif 480w, ../../assets/media/2f6d7616-6b58-4fe9-8464-b7a778bd5a30-9153a02da632/800.avif 800w, ../../assets/media/2f6d7616-6b58-4fe9-8464-b7a778bd5a30-9153a02da632/1200.avif 1200w, ../../assets/media/2f6d7616-6b58-4fe9-8464-b7a778bd5a30-9153a02da632/1600.avif 1600w, ../../assets/media/2f6d7616-6b58-4fe9-8464-b7a778bd5a30-9153a02da632/2400.avif 2400w, ../../assets/media/2f6d7616-6b58-4fe9-8464-b7a778bd5a30-9153a02da632/3200.avif 3200w" sizes="100vw"><source type="image/webp" srcset="../../assets/media/2f6d7616-6b58-4fe9-8464-b7a778bd5a30-9153a02da632/480.webp 480w, ../../assets/media/2f6d7616-6b58-4fe9-8464-b7a778bd5a30-9153a02da632/800.webp 800w, ../../assets/media/2f6d7616-6b58-4fe9-8464-b7a778bd5a30-9153a02da632/1200.webp 1200w, ../../assets/media/2f6d7616-6b58-4fe9-8464-b7a778bd5a30-9153a02da632/1600.webp 1600w, ../../assets/media/2f6d7616-6b58-4fe9-8464-b7a778bd5a30-9153a02da632/2400.webp 2400w, ../../assets/media/2f6d7616-6b58-4fe9-8464-b7a778bd5a30-9153a02da632/3200.webp 3200w" sizes="100vw"><img src="../../assets/media/2f6d7616-6b58-4fe9-8464-b7a778bd5a30-9153a02da632/1200.webp" alt="Aerial view of a wide fairway leading to a green beside a sprawling waste bunker with grass islands, open meadows beyond" width="3200" height="2133" loading="eager" fetchpriority="high" decoding="async" data-media-id="2f6d7616-6b58-4fe9-8464-b7a778bd5a30" data-max-width="3200" data-provenance="original" style="object-position:45% 50%;background-image:url(data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JagCdMoADYGoDX2z0F/ctQAD940L8UQ9GULGXkVl5+GRijV610DLUp5+Yk0i6sXDSr1D5nBEXA5eGREAAAA==)"></picture>
+  </div>
+  <div class="hero__inner">
+    <div class="hero__content" data-reveal="">
+      <span class="eyebrow">Green fee rates</span>
+      <h1>2026&nbsp;green fees, all-inclusive</h1>
+      <p class="hero__intro">Every round at Wooden Sticks comes with the Player’s Badge: 18&nbsp;holes, a shared power cart, the practice facilities and a meal after your round. Book online for the lowest price, and play holes inspired by Augusta, St. Andrews, Troon and Sawgrass in a single&nbsp;afternoon.</p>
+      <p class="hero__fine">All prices are per person, plus&nbsp;HST.</p>
+      <div class="button-row">
+        <a class="button" href="#" data-unbuilt="1">Book a Tee Time</a>
+        <a class="button button--ghost" href="tel:+19058524379">Call <span class="nowrap">905⁠-⁠852⁠-⁠4379</span></a>
+      </div>
+      <a class="hero__next" href="#current-green-fees">See the 2026&nbsp;green fees</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="current-green-fees">
+  <div class="container">
+    <div class="fees">
+      <div class="fees__text" data-reveal="">
+        <span class="eyebrow">2026&nbsp;season</span>
+        <h2>Current green fees</h2>
+        <p>Rates are per person, plus HST. Each row shows the phone price first and the online price&nbsp;second.</p>
+        <div class="button-row">
+          <a class="button" href="#" data-unbuilt="1">Book a Tee Time</a>
+        </div>
+      </div>
+      <div class="fees__table rates" data-reveal="" style="--reveal-index: 1">
+        <table class="rates-table">
+          <caption class="sr-only">2026&nbsp;green fees per person, by day, group size and booking method</caption>
+          <colgroup><col></colgroup>
+          <colgroup span="2"></colgroup>
+          <colgroup span="2"></colgroup>
+          <thead>
+            <tr class="rates-group">
+              <td></td>
+              <th scope="colgroup" colspan="2">Twosome or threesome</th>
+              <th scope="colgroup" colspan="2">Foursome</th>
+            </tr>
+            <tr>
+              <th scope="col">Days</th>
+              <th scope="col" class="num">By phone</th>
+              <th scope="col" class="num">Online</th>
+              <th scope="col" class="num">By phone</th>
+              <th scope="col" class="num">Online</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Monday to Wednesday <span class="rates-tag">Best value</span></th>
+              <td class="num price" data-label="Twosome or threesome, by phone">$210</td>
+              <td class="num price price--online" data-label="Twosome or threesome, online">$200</td>
+              <td class="num price" data-label="Foursome, by phone">$190</td>
+              <td class="num price price--online" data-label="Foursome, online">$180</td>
+            </tr>
+            <tr>
+              <th scope="row">Thursday to Sunday</th>
+              <td class="num price" data-label="Twosome or threesome, by phone">$225</td>
+              <td class="num price price--online" data-label="Twosome or threesome, online">$220</td>
+              <td class="num price" data-label="Foursome, by phone">$200</td>
+              <td class="num price price--online" data-label="Foursome, online">$195</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="rates__note">Online bookings carry a $2.50 per person handling fee. Even with the fee, booking online costs less than booking by&nbsp;phone.</p>
+        <p class="rates__note">Monday to Wednesday is the best-value time to play, and foursomes pay less per person than twosomes or&nbsp;threesomes.</p>
+      </div>
+    </div>
+    <p class="editor-note">Confirm the 2026&nbsp;green fees and day groupings before launch; staff update this table each&nbsp;season.</p>
+  </div>
+</section>
+
+<section class="section section--alt" id="players-badge">
+  <div class="container">
+    <header class="section-head" data-reveal="">
+      <span class="eyebrow">The Player’s Badge</span>
+      <h2>What your Player’s Badge&nbsp;includes</h2>
+    </header>
+    <ul class="includes" data-reveal="">
+      <li class="include">
+        <span class="include__num">01</span>
+        <h3 class="include__title">18&nbsp;holes of golf</h3>
+        <p>A full round on a Ron Garl design, including holes inspired by #12&nbsp;and #13&nbsp;at Augusta, the Postage Stamp at Troon and #17&nbsp;at&nbsp;Sawgrass.</p>
+        <a class="text-link" href="../../the-course/index.html">See the hole-by-hole tour</a>
+      </li>
+      <li class="include">
+        <span class="include__num">02</span>
+        <h3 class="include__title">Shared power cart</h3>
+        <p>A cart for every two players. The course covers more than 330&nbsp;acres, so the drive between holes is part of the&nbsp;round.</p>
+      </li>
+      <li class="include">
+        <span class="include__num">03</span>
+        <h3 class="include__title">Practice facilities</h3>
+        <p>Warm up before you play on the driving range and the putting and chipping&nbsp;greens.</p>
+      </li>
+      <li class="include">
+        <span class="include__num">04</span>
+        <h3 class="include__title">Post-round meal</h3>
+        <p>Sit down in the dining room or on the patio after your round. We make the reservation for&nbsp;you.</p>
+      </li>
+    </ul>
+
+    <div class="split badge-meal">
+      <div class="split__media media focus-top" data-reveal="">
+        <picture><source type="image/avif" srcset="../../assets/media/44f05207-243a-48f0-a87e-61d5b37386b9-942f429f9b91/480.avif 480w, ../../assets/media/44f05207-243a-48f0-a87e-61d5b37386b9-942f429f9b91/800.avif 800w, ../../assets/media/44f05207-243a-48f0-a87e-61d5b37386b9-942f429f9b91/1200.avif 1200w, ../../assets/media/44f05207-243a-48f0-a87e-61d5b37386b9-942f429f9b91/1600.avif 1600w, ../../assets/media/44f05207-243a-48f0-a87e-61d5b37386b9-942f429f9b91/2400.avif 2400w, ../../assets/media/44f05207-243a-48f0-a87e-61d5b37386b9-942f429f9b91/3200.avif 3200w" sizes="(min-width: 900px) 58vw, 100vw"><source type="image/webp" srcset="../../assets/media/44f05207-243a-48f0-a87e-61d5b37386b9-942f429f9b91/480.webp 480w, ../../assets/media/44f05207-243a-48f0-a87e-61d5b37386b9-942f429f9b91/800.webp 800w, ../../assets/media/44f05207-243a-48f0-a87e-61d5b37386b9-942f429f9b91/1200.webp 1200w, ../../assets/media/44f05207-243a-48f0-a87e-61d5b37386b9-942f429f9b91/1600.webp 1600w, ../../assets/media/44f05207-243a-48f0-a87e-61d5b37386b9-942f429f9b91/2400.webp 2400w, ../../assets/media/44f05207-243a-48f0-a87e-61d5b37386b9-942f429f9b91/3200.webp 3200w" sizes="(min-width: 900px) 58vw, 100vw"><img src="../../assets/media/44f05207-243a-48f0-a87e-61d5b37386b9-942f429f9b91/1200.webp" alt="Round table set with flowers before clubhouse windows looking onto the patio and fall colours on the course" width="3200" height="2400" loading="lazy" decoding="async" data-media-id="44f05207-243a-48f0-a87e-61d5b37386b9" data-max-width="3200" data-provenance="original" style="object-position:45% 40%;background-image:url(data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQBQCdASoYABIAPu1iqU2ppaOiMBgMATAdiWcAvVgOEdIBzcMnnUvVXho5LTdQ7LwAAPsfAkFZ3v7GOVGclfA4PfHFBsRmPfyFD8P7QOdm+IcLmDatOK2RzuY9oJVUE5gj3me1QAA=)"></picture>
+      </div>
+      <div class="split__text" data-reveal="" style="--reveal-index: 1">
+        <h3>Want to eat before your&nbsp;round?</h3>
+        <p>A meal before play is at your own expense, so <a href="#" data-unbuilt="1">reserve a table at Fairways Dining</a> to make sure you tee off on&nbsp;time.</p>
+        <p>Appetizers, desserts, alcohol, on-course food and drink, and pro shop purchases are&nbsp;extra.</p>
+      </div>
+    </div>
+    <p class="editor-note">Supply a brighter photo of the Fairways Dining room or patio; the current shot is underexposed with the window light blown&nbsp;out.</p>
+  </div>
+</section>
+
+<div class="vista">
+  <picture><source type="image/avif" srcset="../../assets/media/4aa11efb-f2a9-418a-9113-b8385abfbb73-506e263ff22f/480.avif 480w, ../../assets/media/4aa11efb-f2a9-418a-9113-b8385abfbb73-506e263ff22f/800.avif 800w, ../../assets/media/4aa11efb-f2a9-418a-9113-b8385abfbb73-506e263ff22f/1200.avif 1200w, ../../assets/media/4aa11efb-f2a9-418a-9113-b8385abfbb73-506e263ff22f/1600.avif 1600w, ../../assets/media/4aa11efb-f2a9-418a-9113-b8385abfbb73-506e263ff22f/2400.avif 2400w, ../../assets/media/4aa11efb-f2a9-418a-9113-b8385abfbb73-506e263ff22f/3200.avif 3200w" sizes="100vw"><source type="image/webp" srcset="../../assets/media/4aa11efb-f2a9-418a-9113-b8385abfbb73-506e263ff22f/480.webp 480w, ../../assets/media/4aa11efb-f2a9-418a-9113-b8385abfbb73-506e263ff22f/800.webp 800w, ../../assets/media/4aa11efb-f2a9-418a-9113-b8385abfbb73-506e263ff22f/1200.webp 1200w, ../../assets/media/4aa11efb-f2a9-418a-9113-b8385abfbb73-506e263ff22f/1600.webp 1600w, ../../assets/media/4aa11efb-f2a9-418a-9113-b8385abfbb73-506e263ff22f/2400.webp 2400w, ../../assets/media/4aa11efb-f2a9-418a-9113-b8385abfbb73-506e263ff22f/3200.webp 3200w" sizes="100vw"><img src="../../assets/media/4aa11efb-f2a9-418a-9113-b8385abfbb73-506e263ff22f/1200.webp" alt="Aerial view of golf holes wrapped around a pond, with winding cart paths, bunkers and surrounding forest" width="3200" height="2133" loading="lazy" decoding="async" data-media-id="4aa11efb-f2a9-418a-9113-b8385abfbb73" data-max-width="3200" data-provenance="original" style="object-position:55% 50%;background-image:url(data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAwCdASoYABAAPu1kqU2ppaOiMAgBMB2JYgCdAB5OEvrcNDq0UAD+FGs1XsV5uMRkU+TbS7l2Dv/DfNjuuz1jAm3S6XPakMF8xFKwAAA=)"></picture>
+</div>
+
+<section class="section seasonal" id="seasonal-rates">
+  <div class="container">
+    <div class="split split--reverse">
+      <div class="split__media media" data-reveal="">
+        <picture><source type="image/avif" srcset="../../assets/media/defa5cc4-df24-4352-b4ce-f098f0871b6c-004317e13ab1/480.avif 480w, ../../assets/media/defa5cc4-df24-4352-b4ce-f098f0871b6c-004317e13ab1/800.avif 800w, ../../assets/media/defa5cc4-df24-4352-b4ce-f098f0871b6c-004317e13ab1/872.avif 872w" sizes="(min-width: 900px) 50vw, 100vw"><source type="image/webp" srcset="../../assets/media/defa5cc4-df24-4352-b4ce-f098f0871b6c-004317e13ab1/480.webp 480w, ../../assets/media/defa5cc4-df24-4352-b4ce-f098f0871b6c-004317e13ab1/800.webp 800w, ../../assets/media/defa5cc4-df24-4352-b4ce-f098f0871b6c-004317e13ab1/872.webp 872w" sizes="(min-width: 900px) 50vw, 100vw"><img src="../../assets/media/defa5cc4-df24-4352-b4ce-f098f0871b6c-004317e13ab1/872.webp" alt="Island green with a timber bulkhead reflected in a pond, with the clubhouse and autumn trees in the distance" width="872" height="558" loading="lazy" decoding="async" data-media-id="defa5cc4-df24-4352-b4ce-f098f0871b6c" data-max-width="872" data-provenance="original" style="object-position:55% 60%;background-image:url(data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABwBACdASoYAA8APu1iqU2ppaOiMAgBMB2JYgCdMoMYAEJZv8zPnh/dAvI3oAD+r5c+75bfHupwN5RUBUNpzFMMVDSmaRFf9LCcJNwNNdj1KOXMpxl/03UQxQqFmH1AAAA=)"></picture>
+      </div>
+      <div class="split__text" data-reveal="" style="--reveal-index: 1">
+        <span class="eyebrow">Fall rates</span>
+        <h2>Seasonal rates</h2>
+        <p>Fall rates replace the regular green fees on the dates below. Prices are per person, plus HST, and every fall tee time is open for online&nbsp;booking.</p>
+        <ul class="periods">
+          <li class="period">
+            <h3 class="period__dates">October 1&nbsp;to 4</h3>
+            <span class="period__price price">$190</span>
+            <p>Includes golf, a shared power cart and the post-round&nbsp;meal.</p>
+          </li>
+          <li class="period">
+            <h3 class="period__dates">October 5&nbsp;to 10</h3>
+            <span class="period__price price">$170</span>
+            <p>Includes golf, a shared power cart and the post-round&nbsp;meal.</p>
+          </li>
+          <li class="period">
+            <h3 class="period__dates">October 11&nbsp;to 25</h3>
+            <span class="period__price price">$140</span>
+            <p>Includes golf and a shared power cart&nbsp;only.</p>
+          </li>
+        </ul>
+        <p><strong>Bonus:</strong> every October tee time comes with a $20 pro shop&nbsp;voucher.</p>
+        <p>Planning for 12&nbsp;or more players? See our group packages for group&nbsp;pricing.</p>
+        <div class="button-row">
+          <a class="button" href="#" data-unbuilt="1">Book a Tee Time</a>
+          <a class="button button--ghost" href="#" data-unbuilt="1">View group packages</a>
+        </div>
+      </div>
+    </div>
+    <p class="editor-note">Confirm the October rate periods and voucher offer for the&nbsp;2026&nbsp;season.</p>
+  </div>
+</section>
+
+<section class="section section--alt" id="other-ways-to-play">
+  <div class="container">
+    <header class="section-head section-head--left" data-reveal="">
+      <span class="eyebrow">More options</span>
+      <h2>Other ways to play</h2>
+      <p>Prices are per person, plus HST and any listed fees, unless stated&nbsp;otherwise.</p>
+    </header>
+    <ul class="ways" data-reveal="">
+      <li class="way">
+        <h3 class="way__title"><a class="way__link" href="#" data-unbuilt="1">Group golf packages</a></h3>
+        <p class="way__price"><span class="way__from price">From&nbsp;$175</span><span class="way__qual">per person, plus HST and admin fee</span></p>
+        <p class="way__text">Bring 12&nbsp;to 24&nbsp;players for guaranteed tee times, a commemorative Player’s Badge and reserved dining after your&nbsp;round.</p>
+      </li>
+      <li class="way">
+        <h3 class="way__title"><a class="way__link" href="#" data-unbuilt="1">Corporate golf programs</a></h3>
+        <p class="way__price"><span class="way__from price">From&nbsp;$7,200</span><span class="way__qual">for 10&nbsp;foursomes</span></p>
+        <p class="way__text">Host or send clients on your own schedule, with 30-day priority booking and flexible tee&nbsp;times.</p>
+      </li>
+      <li class="way">
+        <h3 class="way__title"><a class="way__link" href="#" data-unbuilt="1">Stay &amp; Play packages</a></h3>
+        <p class="way__price"><span class="way__from price">From&nbsp;$445</span><span class="way__qual">per person, plus resort fees and taxes</span></p>
+        <p class="way__text">Two 18-hole rounds, meals and a night in one of our cabins or&nbsp;suites.</p>
+      </li>
+      <li class="way">
+        <h3 class="way__title"><a class="way__link" href="#" data-unbuilt="1">Gift cards and specials</a></h3>
+        <p class="way__price"><span class="way__from price">From&nbsp;$50</span><span class="way__qual">gift cards</span></p>
+        <p class="way__text">Give a round, a gift package or a dollar-amount&nbsp;card.</p>
+      </li>
+      <li class="way">
+        <h3 class="way__title"><a class="way__link" href="#" data-unbuilt="1">Associate membership</a></h3>
+        <p class="way__price"><span class="way__from price">$400</span><span class="way__qual">new members, plus HST, for Uxbridge and Scugog residents</span></p>
+        <p class="way__text">Preferred member and guest green fees and a 14-day booking window for local&nbsp;golfers.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="band band--photo band--terms" id="before-you-book">
+  <div class="band__photo">
+    <picture><source type="image/avif" srcset="../../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/480.avif 480w, ../../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/800.avif 800w, ../../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/1200.avif 1200w, ../../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/1600.avif 1600w, ../../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/2400.avif 2400w, ../../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/3200.avif 3200w" sizes="100vw"><source type="image/webp" srcset="../../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/480.webp 480w, ../../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/800.webp 800w, ../../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/1200.webp 1200w, ../../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/1600.webp 1600w, ../../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/2400.webp 2400w, ../../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/3200.webp 3200w" sizes="100vw"><img src="../../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/1200.webp" alt="Aerial view of a pine-lined fairway with long shadows, white bunkers and a cart path" width="3200" height="2133" loading="lazy" decoding="async" data-media-id="7a94ac50-a26e-4722-ad17-79b62fba9546" data-max-width="3200" data-provenance="original" style="object-position:45% 45%;background-image:url(data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAwCdASoYABAAPu1iqk4ppaQiMAgBMB2JYgAASnloc39p5wIscAD+zMs1QBKvPLkLeWYfck/Ir+54w4nB6bVjZb2kuwy3AQOs/kgrgAWojWwA)"></picture>
+  </div>
+  <div class="band__inner" data-reveal="">
+    <span class="eyebrow">Booking terms</span>
+    <h2>Before you book</h2>
+    <p>Payment is taken in full when you book your tee&nbsp;time.</p>
+    <p>Changes are credited toward another round, not refunded. Rain checks follow our rain check&nbsp;policy.</p>
+    <p>Single players cannot book. Twosomes may be paired with another group, and public tee times run until&nbsp;3:00&nbsp;pm.</p>
+    <div class="button-row">
+      <a class="button" href="#" data-unbuilt="1">Book a Tee Time</a>
+      <a class="button button--ghost" href="#" data-unbuilt="1">Read the full booking terms</a>
+    </div>
+  </div>
+</section>
+
+<section class="eclub" id="e-club">
+  <div class="eclub__inner">
+    <div class="eclub__text" data-reveal="">
+      <span class="eyebrow">E-Club</span>
+      <h2>Get specials first</h2>
+      <p>Join the E-Club for seasonal rate offers, golf specials and news about upcoming events at Wooden&nbsp;Sticks.</p>
+    </div>
+    <form class="eclub__form" novalidate="" data-reveal="" style="--reveal-index: 1" data-demo="1">
+      <label for="eclub-email">Email address</label>
+      <div class="eclub__row">
+        <input id="eclub-email" name="email" type="email" autocomplete="email" aria-describedby="eclub-consent eclub-status" required="">
+        <button class="button" type="submit">Join the E-Club</button>
+      </div>
+      <p class="field__help" id="eclub-consent">By signing up, you agree to receive emails from Wooden Sticks Golf Club. You can unsubscribe at any time using the link in every&nbsp;email.</p>
+      <p class="form-status" id="eclub-status" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="site-footer"><div class="footer-inner"><div class="ornament" aria-hidden="true"><svg viewBox="0 0 24 32" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 29V3l11 4.5L9 12"/><path d="M4 29h10"/></svg></div><div class="footer-grid"><div class="footer-brand"><img class="footer-logo" src="../../assets/brand/logo-on-dark.png" alt="Wooden Sticks Golf Club" width="174" height="142"><p class="footer-tagline">Eighteen holes inspired by the game's great courses, open to the public in Uxbridge, Ontario.</p><a class="button footer-cta" href="#" data-unbuilt="1">Book a Tee Time</a><nav class="footer-social" aria-label="Wooden Sticks Golf Club on social media"><ul><li><a href="https://www.facebook.com/woodensticksgolf/" rel="noopener">Facebook</a></li><li><a href="https://www.instagram.com/woodensticksgolf/" rel="noopener">Instagram</a></li><li><a href="http://twitter.com/WoodenSticks" rel="noopener">X</a></li><li><a href="https://www.youtube.com/channel/UCcVe-uCj4KgaiHdW523tRzw" rel="noopener">YouTube</a></li><li><a href="https://www.tripadvisor.ca/Attraction_Review-g984010-d3382463-Reviews-Wooden_Sticks_Golf_Course-Uxbridge_Ontario.html" rel="noopener">Tripadvisor</a></li></ul></nav></div><nav class="footer-nav" aria-label="Footer"><h2 class="footer-heading">Explore</h2><ul><li><a href="#" data-unbuilt="1">Golf</a></li><li><a href="../../the-course/index.html">The Course</a></li><li><a href="#" data-unbuilt="1">Accommodations</a></li><li><a href="#" data-unbuilt="1">Dining</a></li><li><a href="#" data-unbuilt="1">Golf Events</a></li><li><a href="#" data-unbuilt="1">About</a></li></ul></nav><nav class="footer-nav" aria-label="More"><h2 class="footer-heading">More</h2><ul><li><a href="../../golf/green-fee-rates/index.html">Golf Rates</a></li><li><a href="#" data-unbuilt="1">Cabins &amp; Suites</a></li><li><a href="#" data-unbuilt="1">Private Events</a></li><li><a href="#" data-unbuilt="1">Tournaments</a></li><li><a href="#" data-unbuilt="1">Group Packages</a></li><li><a href="#" data-unbuilt="1">Contact &amp; Hours</a></li><li><a href="#" data-unbuilt="1">Join the E-Club</a></li></ul></nav><div class="footer-contact"><h2 class="footer-heading">Contact</h2><address><p>Uxbridge, ON</p><p><a href="tel:+19058524379">+1-905-852-4379</a></p></address></div></div><div class="footer-legal"><p>© 2026 Wooden Sticks Golf Club</p><nav class="footer-legal-links" aria-label="Legal"><ul><li><a href="#" data-unbuilt="1">Privacy policy</a></li><li><a href="#" data-unbuilt="1">Accessibility</a></li></ul></nav></div></div></footer>
+<script src="../../assets/config.js"></script><script src="../../assets/preview.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Play golf, stay and dine in Uxbridge, Ontario | Wooden Sticks Golf Club</title>
+<meta name="description" content="Play inspired holes at a public golf course in Uxbridge, Ontario, then stay in a cabin or suite and dine at Fairways. Book a tee time online today.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Play golf, stay and dine in Uxbridge, Ontario | Wooden Sticks Golf Club">
+<meta property="og:description" content="Play inspired holes at a public golf course in Uxbridge, Ontario, then stay in a cabin or suite and dine at Fairways. Book a tee time online today.">
+<meta property="og:image" content="../assets/og/home.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/brand/icon-32.png"><link rel="apple-touch-icon" href="../assets/brand/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&amp;family=Manrope:wght@400;500;600&amp;display=swap">
+<link rel="preload" as="image" href="../assets/media/3408d33c-4c80-4322-ba41-37fd9863299c-04639bb71857/800.webp" fetchpriority="high">
+<link rel="stylesheet" href="../assets/base.css">
+<link rel="stylesheet" href="../assets/system.css">
+<style>/* Home: routing rows with titles only, so the title sits on the bottom shade */
+.tiles.tiles--titles .tile__body { min-height: 0; }
+.tiles--titles .tile__title { margin-bottom: 0; }
+
+/* Two-card row matches the size of the three-card rows above it */
+@media (min-width: 900px) {
+  .tiles--pair {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: calc((200% - var(--grid-gap)) / 3);
+    margin-inline: auto;
+  }
+}
+
+/* Editorial opener, then its row of cards */
+.home-split { margin-bottom: var(--space-3xl); }
+
+/* Buttons below the accommodation cards */
+.section-foot .button-row {
+  justify-content: center;
+  margin-top: 0;
+}
+@media (max-width: 599.98px) {
+  .section-foot .button-row .button { flex: 1 1 100%; }
+}
+
+/* Revision 1 */
+/* Offering sections: full-width intro photo, then centred heading and one card row */
+.section-photo {
+  aspect-ratio: 12 / 5;
+  margin-bottom: var(--space-2xl);
+}
+#dining .section-photo img { object-position: 50% 45%; }
+@media (max-width: 599.98px) {
+  .section-photo { aspect-ratio: 3 / 2; }
+}
+
+/* Dining pair: two equal columns on the full content width */
+@media (min-width: 900px) {
+  .tiles--pair {
+    max-width: none;
+    margin-inline: 0;
+  }
+}
+@media (min-width: 600px) {
+  .tiles--pair .tile { aspect-ratio: 3 / 2; }
+}
+
+/* Quiet link cue on every card */
+.tiles.tiles--titles .tile__body {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-s);
+}
+.tiles--titles .tile__title { min-width: 0; }
+.tile__cue {
+  flex: none;
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 0.35em;
+  color: var(--white);
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: opacity var(--dur-base) var(--ease), transform var(--dur-base) var(--ease);
+}
+.tile__cue svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.tile:hover .tile__cue,
+.tile.is-hover .tile__cue,
+.tile:focus-visible .tile__cue,
+.tile.is-focus .tile__cue {
+  opacity: 1;
+  transform: none;
+}
+@media (hover: none) {
+  .tile__cue { opacity: 1; transform: none; }
+}
+
+/* Light logo in the transparent header */
+.site-header--over-hero:not(.is-scrolled):not(.menu-open) .brand-logo--on-dark {
+  filter: brightness(0) invert(1);
+}
+
+/* E-Club: standard bronze button, readable helper text */
+.eclub .button { box-shadow: none; }
+.eclub .button:active { box-shadow: inset 0 0 0 1px var(--on-accent); }
+.eclub__form label { font-size: var(--step-0); }
+.eclub .field__help { font-size: 0.9375rem; }
+
+/* Footer social links: even gaps, one line on laptop, a tidy grid on phones */
+.footer-social ul {
+  gap: 0;
+  margin-inline: -0.5rem;
+}
+.site-footer .footer-social a {
+  min-width: 0;
+  padding-inline: 0.5rem;
+}
+@media (max-width: 599.98px) {
+  .footer-social ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-inline: 0;
+  }
+  .site-footer .footer-social a {
+    width: 100%;
+    padding-inline: 0;
+    justify-content: flex-start;
+  }
+}
+
+/* Revision 1 */
+/* Revision 2 */
+/* Golf and stay rows share one large 4:5 card; the dining pair stays 3:2 at half width */
+.tiles > li { min-width: 0; }
+.tiles.tiles--titles .tile { aspect-ratio: 4 / 5; }
+@media (min-width: 600px) {
+  .tiles.tiles--titles.tiles--pair .tile { aspect-ratio: 3 / 2; }
+}
+
+/* Stay band: frame the fairway and its evening shadows */
+#stay .section-photo img { object-position: 50% 58%; }
+
+/* E-Club consent line: readable at the band's scale */
+.eclub .field__help {
+  font-size: 1rem;
+  line-height: 1.55;
+  max-width: 56ch;
+}
+
+/* Footer: reversed logo on deep green, as in the header */
+.site-footer .footer-logo { filter: brightness(0) invert(1); }</style>
+<link rel="stylesheet" href="../assets/preview.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"GolfCourse","name":"Wooden Sticks Golf Club","telephone":"+1-905-852-4379","address":{"@type":"PostalAddress","addressLocality":"Uxbridge","addressRegion":"ON","addressCountry":"CA"}}</script>
+</head>
+<body>
+<nav class="pv-bar" aria-label="Design preview">
+<a class="pv-i" href="../index.html" aria-label="Wooden Sticks Golf Club design concept, version 1: overview" data-tip="Wooden Sticks Golf Club design concept, version 1"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg></a>
+<span class="pv-i pv-off" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m15 18-6-6 6-6"/></svg></span><a class="pv-i" rel="next" href="../golf/green-fee-rates/index.html" aria-label="Next page: Golf Rates" data-tip="Next: Golf Rates (→)"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></a>
+<button type="button" class="pv-i" id="pv-pages" aria-expanded="false" aria-controls="pv-pages-menu" aria-label="Pages (now: Homepage · Home)" data-tip="Pages · Homepage · Home"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12h.01"/><path d="M3 18h.01"/><path d="M3 6h.01"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M8 6h13"/></svg></button>
+<div class="pv-menu" id="pv-pages-menu" hidden><p class="pv-group">Homepage</p><ul><li><a href="../home/index.html" aria-current="page">Home</a></li></ul><p class="pv-group">Golf</p><ul><li><a href="../golf/green-fee-rates/index.html">Golf Rates</a></li></ul><p class="pv-group">The Course</p><ul><li><a href="../the-course/index.html">The Course</a></li></ul></div>
+<span class="pv-sep" aria-hidden="true"></span>
+<a class="pv-i" href="../design-system/index.html" aria-label="Design system" data-tip="Design system"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg></a>
+<button type="button" class="pv-i" id="pv-mobile" aria-pressed="false" aria-label="Phone width" data-tip="Phone width"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg></button>
+<button type="button" class="pv-i" id="pv-structure" aria-pressed="false" aria-label="Structure only" data-tip="Structure only"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 3a2 2 0 0 0-2 2"/><path d="M19 3a2 2 0 0 1 2 2"/><path d="M21 19a2 2 0 0 1-2 2"/><path d="M5 21a2 2 0 0 1-2-2"/><path d="M9 3h1"/><path d="M9 21h1"/><path d="M14 3h1"/><path d="M14 21h1"/><path d="M3 9v1"/><path d="M21 9v1"/><path d="M3 14v1"/><path d="M21 14v1"/></svg></button>
+<span class="pv-grow" aria-hidden="true"></span>
+<button type="button" class="pv-i pv-approve" id="pv-approve" aria-label="Approve this version" data-tip="Approve this version"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg></button>
+</nav>
+<header class="site-header site-header--over-hero" data-header><a class="skip-link" href="#main">Skip to main content</a><div class="utility-bar"><div class="utility-inner"><nav class="utility-nav" aria-label="Utility"><ul class="utility-list"><li><a href="tel:+19058524379">+1-905-852-4379</a></li></ul></nav></div></div><div class="header-bar"><div class="header-inner"><a class="brand" href="../home/index.html" aria-label="Wooden Sticks Golf Club home"><img class="brand-logo brand-logo--on-dark" src="../assets/brand/logo-on-dark.png" alt="" width="174" height="142"><img class="brand-logo brand-logo--on-light" src="../assets/brand/logo-on-light.png" alt="" width="174" height="142"></a><nav class="main-nav" id="main-nav" aria-label="Main"><ul class="nav-list"><li class="nav-item has-children"><a class="nav-link" href="#" data-unbuilt="1">Golf</a><button class="submenu-toggle" type="button" data-submenu-toggle aria-expanded="false" aria-controls="sub-golf"><span class="sr-only">Golf pages</span></button><ul class="submenu" id="sub-golf"><li class="nav-item"><a class="nav-link" href="../golf/green-fee-rates/index.html">Golf Rates</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Book a Tee Time</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Gift Cards &amp; Specials</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Lessons, Clinics &amp; Camps</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Memberships</a></li></ul></li><li class="nav-item has-children"><a class="nav-link" href="../the-course/index.html">The Course</a><button class="submenu-toggle" type="button" data-submenu-toggle aria-expanded="false" aria-controls="sub-the-course"><span class="sr-only">The Course pages</span></button><ul class="submenu" id="sub-the-course"><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Scorecard</a></li></ul></li><li class="nav-item has-children"><a class="nav-link" href="#" data-unbuilt="1">Accommodations</a><button class="submenu-toggle" type="button" data-submenu-toggle aria-expanded="false" aria-controls="sub-accommodations"><span class="sr-only">Accommodations pages</span></button><ul class="submenu" id="sub-accommodations"><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Cabins &amp; Suites</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Quad Cabins</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Single Suites</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Couples Retreats</a></li></ul></li><li class="nav-item has-children"><a class="nav-link" href="#" data-unbuilt="1">Dining</a><button class="submenu-toggle" type="button" data-submenu-toggle aria-expanded="false" aria-controls="sub-dining"><span class="sr-only">Dining pages</span></button><ul class="submenu" id="sub-dining"><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Menus</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Private Events</a></li></ul></li><li class="nav-item has-children"><a class="nav-link" href="#" data-unbuilt="1">Golf Events</a><button class="submenu-toggle" type="button" data-submenu-toggle aria-expanded="false" aria-controls="sub-golf-events"><span class="sr-only">Golf Events pages</span></button><ul class="submenu submenu--mega" id="sub-golf-events"><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Tournaments</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Group Packages</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Corporate Golf Programs</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Golf Leagues</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Meeting Packages</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Events &amp; Sales Team</a></li></ul></li><li class="nav-item has-children"><a class="nav-link" href="#" data-unbuilt="1">About</a><button class="submenu-toggle" type="button" data-submenu-toggle aria-expanded="false" aria-controls="sub-about"><span class="sr-only">About pages</span></button><ul class="submenu" id="sub-about"><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Contact &amp; Hours</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">News &amp; Events</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Community &amp; Charity</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Careers</a></li><li class="nav-item"><a class="nav-link" href="#" data-unbuilt="1">Join the E-Club</a></li></ul></li></ul></nav><a class="header-cta" href="#" aria-label="Book a Tee Time" data-unbuilt="1">Book a Tee Time</a><button class="menu-toggle" type="button" data-menu-toggle aria-controls="main-nav" aria-expanded="false"><span class="menu-toggle-label">Menu</span></button></div></div></header>
+<main id="main">
+<section class="hero" data-hero="">
+  <div class="hero__media">
+    <picture><source type="image/avif" srcset="../assets/media/3408d33c-4c80-4322-ba41-37fd9863299c-04639bb71857/480.avif 480w, ../assets/media/3408d33c-4c80-4322-ba41-37fd9863299c-04639bb71857/800.avif 800w, ../assets/media/3408d33c-4c80-4322-ba41-37fd9863299c-04639bb71857/1200.avif 1200w, ../assets/media/3408d33c-4c80-4322-ba41-37fd9863299c-04639bb71857/1600.avif 1600w, ../assets/media/3408d33c-4c80-4322-ba41-37fd9863299c-04639bb71857/2400.avif 2400w, ../assets/media/3408d33c-4c80-4322-ba41-37fd9863299c-04639bb71857/3200.avif 3200w" sizes="100vw"><source type="image/webp" srcset="../assets/media/3408d33c-4c80-4322-ba41-37fd9863299c-04639bb71857/480.webp 480w, ../assets/media/3408d33c-4c80-4322-ba41-37fd9863299c-04639bb71857/800.webp 800w, ../assets/media/3408d33c-4c80-4322-ba41-37fd9863299c-04639bb71857/1200.webp 1200w, ../assets/media/3408d33c-4c80-4322-ba41-37fd9863299c-04639bb71857/1600.webp 1600w, ../assets/media/3408d33c-4c80-4322-ba41-37fd9863299c-04639bb71857/2400.webp 2400w, ../assets/media/3408d33c-4c80-4322-ba41-37fd9863299c-04639bb71857/3200.webp 3200w" sizes="100vw"><img src="../assets/media/3408d33c-4c80-4322-ba41-37fd9863299c-04639bb71857/1200.webp" alt="Aerial view of a long fairway curving through dense forest beside a cart path and creek, with the green in the distance" width="3200" height="2133" loading="eager" fetchpriority="high" decoding="async" data-media-id="3408d33c-4c80-4322-ba41-37fd9863299c" data-max-width="3200" data-provenance="original" style="object-position:55% 50%;background-image:url(data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADQAwCdASoYABAAPu1kqk4ppaQiMAgBMB2JaAAAW9OeOikdDBtRKgAAyz5B/+0iSE569pZcY1Au5DZPz/bWEc728njPgc9R68+UPyXwQJJYGuRXeZIGAA==)"></picture>
+  </div>
+  <div class="hero__inner">
+    <div class="hero__content" data-reveal="">
+      <h1>Play all the&nbsp;holes you’ve dreamed&nbsp;about</h1>
+      <div class="button-row">
+        <a class="button" href="#" data-unbuilt="1">Book a Tee Time</a>
+        <a class="button button--ghost" href="../the-course/index.html">Explore the Course</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="ways-to-play">
+  <div class="container">
+    <header class="section-head" data-reveal="">
+      <h2>Three Great Ways to&nbsp;Play</h2>
+    </header>
+    <ul class="tiles tiles--titles">
+      <li data-reveal="">
+        <a class="tile" href="../golf/green-fee-rates/index.html">
+          <picture><source type="image/avif" srcset="../assets/media/a67126dc-1a3f-4ef6-88ea-53efda87cba1-675b12764ef6/480.avif 480w, ../assets/media/a67126dc-1a3f-4ef6-88ea-53efda87cba1-675b12764ef6/800.avif 800w, ../assets/media/a67126dc-1a3f-4ef6-88ea-53efda87cba1-675b12764ef6/1200.avif 1200w, ../assets/media/a67126dc-1a3f-4ef6-88ea-53efda87cba1-675b12764ef6/1600.avif 1600w, ../assets/media/a67126dc-1a3f-4ef6-88ea-53efda87cba1-675b12764ef6/2400.avif 2400w, ../assets/media/a67126dc-1a3f-4ef6-88ea-53efda87cba1-675b12764ef6/3200.avif 3200w" sizes="(min-width: 900px) 33vw, (min-width: 600px) 50vw, 100vw"><source type="image/webp" srcset="../assets/media/a67126dc-1a3f-4ef6-88ea-53efda87cba1-675b12764ef6/480.webp 480w, ../assets/media/a67126dc-1a3f-4ef6-88ea-53efda87cba1-675b12764ef6/800.webp 800w, ../assets/media/a67126dc-1a3f-4ef6-88ea-53efda87cba1-675b12764ef6/1200.webp 1200w, ../assets/media/a67126dc-1a3f-4ef6-88ea-53efda87cba1-675b12764ef6/1600.webp 1600w, ../assets/media/a67126dc-1a3f-4ef6-88ea-53efda87cba1-675b12764ef6/2400.webp 2400w, ../assets/media/a67126dc-1a3f-4ef6-88ea-53efda87cba1-675b12764ef6/3200.webp 3200w" sizes="(min-width: 900px) 33vw, (min-width: 600px) 50vw, 100vw"><img src="../assets/media/a67126dc-1a3f-4ef6-88ea-53efda87cba1-675b12764ef6/1200.webp" alt="Aerial view of a putting green and flagstick ringed by five deep sand bunkers" width="3200" height="2133" loading="lazy" decoding="async" data-media-id="a67126dc-1a3f-4ef6-88ea-53efda87cba1" data-max-width="3200" data-provenance="original" style="object-position:56% 45%;background-image:url(data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JaAC06CHhhCsKCJU84AOgQAD+u+jJujH4vg3WD6BlHomyYU6IlDsnDk46P0Am+saeLCnG68NztEWsiXmo7m5bl8AAAA==)"></picture>
+          <span class="tile__body">
+            <span class="tile__title">Golf Rates</span>
+            <span class="tile__cue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></span>
+          </span>
+        </a>
+      </li>
+      <li data-reveal="" style="--reveal-index: 1">
+        <a class="tile" href="#" data-unbuilt="1">
+          <picture><source type="image/avif" srcset="../assets/media/e34572e2-54a2-4c63-8859-c6509ae3a14e-7b4a6ca65325/480.avif 480w, ../assets/media/e34572e2-54a2-4c63-8859-c6509ae3a14e-7b4a6ca65325/800.avif 800w, ../assets/media/e34572e2-54a2-4c63-8859-c6509ae3a14e-7b4a6ca65325/1200.avif 1200w, ../assets/media/e34572e2-54a2-4c63-8859-c6509ae3a14e-7b4a6ca65325/1600.avif 1600w, ../assets/media/e34572e2-54a2-4c63-8859-c6509ae3a14e-7b4a6ca65325/2133.avif 2133w" sizes="(min-width: 900px) 33vw, (min-width: 600px) 50vw, 100vw"><source type="image/webp" srcset="../assets/media/e34572e2-54a2-4c63-8859-c6509ae3a14e-7b4a6ca65325/480.webp 480w, ../assets/media/e34572e2-54a2-4c63-8859-c6509ae3a14e-7b4a6ca65325/800.webp 800w, ../assets/media/e34572e2-54a2-4c63-8859-c6509ae3a14e-7b4a6ca65325/1200.webp 1200w, ../assets/media/e34572e2-54a2-4c63-8859-c6509ae3a14e-7b4a6ca65325/1600.webp 1600w, ../assets/media/e34572e2-54a2-4c63-8859-c6509ae3a14e-7b4a6ca65325/2133.webp 2133w" sizes="(min-width: 900px) 33vw, (min-width: 600px) 50vw, 100vw"><img src="../assets/media/e34572e2-54a2-4c63-8859-c6509ae3a14e-7b4a6ca65325/1200.webp" alt="Aerial view of a hole with a large waste bunker dotted with grass islands, a winding cart path and a tree-framed green" width="2133" height="3200" loading="lazy" decoding="async" data-media-id="e34572e2-54a2-4c63-8859-c6509ae3a14e" data-max-width="2133" data-provenance="original" style="object-position:55% 45%;background-image:url(data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAAAQBgCdASoYACQAPtFSoU2oJKMiOrzIAQAaCUAYmwWayUz8JPCjxMK3OdaFtOUchodmhZd2Du9ImAAA/lv4sEJ6KheiGG6CjhL/XbG+UhsaHO0TJmfRVoh+94NMRfFRwtJ6v8GyO0y2ksfubSWxzowz9xzyJ1V+HVg5wpvr45SCKlw+Ip3NwSIag8yPqNvB4TE+QwAA)"></picture>
+          <span class="tile__body">
+            <span class="tile__title">Group Packages</span>
+            <span class="tile__cue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></span>
+          </span>
+        </a>
+      </li>
+      <li data-reveal="" style="--reveal-index: 2">
+        <a class="tile" href="#" data-unbuilt="1">
+          <picture><source type="image/avif" srcset="../assets/media/e29915fe-0b54-4434-b49f-de2cce91d047-bb5a5d46dcf6/480.avif 480w, ../assets/media/e29915fe-0b54-4434-b49f-de2cce91d047-bb5a5d46dcf6/800.avif 800w, ../assets/media/e29915fe-0b54-4434-b49f-de2cce91d047-bb5a5d46dcf6/1200.avif 1200w, ../assets/media/e29915fe-0b54-4434-b49f-de2cce91d047-bb5a5d46dcf6/1600.avif 1600w, ../assets/media/e29915fe-0b54-4434-b49f-de2cce91d047-bb5a5d46dcf6/2400.avif 2400w, ../assets/media/e29915fe-0b54-4434-b49f-de2cce91d047-bb5a5d46dcf6/2579.avif 2579w" sizes="(min-width: 900px) 33vw, (min-width: 600px) 50vw, 100vw"><source type="image/webp" srcset="../assets/media/e29915fe-0b54-4434-b49f-de2cce91d047-bb5a5d46dcf6/480.webp 480w, ../assets/media/e29915fe-0b54-4434-b49f-de2cce91d047-bb5a5d46dcf6/800.webp 800w, ../assets/media/e29915fe-0b54-4434-b49f-de2cce91d047-bb5a5d46dcf6/1200.webp 1200w, ../assets/media/e29915fe-0b54-4434-b49f-de2cce91d047-bb5a5d46dcf6/1600.webp 1600w, ../assets/media/e29915fe-0b54-4434-b49f-de2cce91d047-bb5a5d46dcf6/2400.webp 2400w, ../assets/media/e29915fe-0b54-4434-b49f-de2cce91d047-bb5a5d46dcf6/2579.webp 2579w" sizes="(min-width: 900px) 33vw, (min-width: 600px) 50vw, 100vw"><img src="../assets/media/e29915fe-0b54-4434-b49f-de2cce91d047-bb5a5d46dcf6/1200.webp" alt="Aerial view of tee boxes and a winding cart path leading past a large waste bunker to a tree-lined fairway" width="2579" height="3147" loading="lazy" decoding="async" data-media-id="e29915fe-0b54-4434-b49f-de2cce91d047" data-max-width="2579" data-provenance="original" style="object-position:55% 45%;background-image:url(data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAADQBACdASoYAB0APu1mqk8ppaOiKA1RMB2JQBOgAha/OaYGeSIzw06HLAIsKuc8AAD+nYnL9BuHZYmbN0ya8BkeHd5sKbc9d4/SA5q/DulhQ/n0WPcggC42LErESeduRIGI7kgM755LRHy6yiwUhKuAAAA=)"></picture>
+          <span class="tile__body">
+            <span class="tile__title">Tournaments</span>
+            <span class="tile__cue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></span>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section section--alt" id="stay">
+  <div class="container">
+    <div class="section-photo media" data-reveal="">
+      <picture><source type="image/avif" srcset="../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/480.avif 480w, ../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/800.avif 800w, ../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/1200.avif 1200w, ../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/1600.avif 1600w, ../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/2400.avif 2400w, ../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/3200.avif 3200w" sizes="(min-width: 1440px) 1440px, 100vw"><source type="image/webp" srcset="../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/480.webp 480w, ../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/800.webp 800w, ../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/1200.webp 1200w, ../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/1600.webp 1600w, ../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/2400.webp 2400w, ../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/3200.webp 3200w" sizes="(min-width: 1440px) 1440px, 100vw"><img src="../assets/media/7a94ac50-a26e-4722-ad17-79b62fba9546-6bb55d660182/1200.webp" alt="Aerial view of a pine-lined fairway in low evening sun, with long shadows, white bunkers and a cart path" width="3200" height="2133" loading="lazy" decoding="async" data-media-id="7a94ac50-a26e-4722-ad17-79b62fba9546" data-max-width="3200" data-provenance="original" style="object-position:45% 45%;background-image:url(data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAwCdASoYABAAPu1iqk4ppaQiMAgBMB2JYgAASnloc39p5wIscAD+zMs1QBKvPLkLeWYfck/Ir+54w4nB6bVjZb2kuwy3AQOs/kgrgAWojWwA)"></picture>
+    </div>
+    <header class="section-head" data-reveal="">
+      <h2>The Perfect Setting for a Great&nbsp;Getaway</h2>
+      <p>Stay steps from the first tee in our cabins and suites, and make a golf trip of it with a Stay &amp; Play&nbsp;package.</p>
+    </header>
+    <ul class="tiles tiles--titles">
+      <li data-reveal="">
+        <a class="tile" href="#" data-unbuilt="1">
+          <picture><source type="image/avif" srcset="../assets/media/809898ac-e92d-46ea-983e-8fe2d87ae889-b9ff86cf024a/480.avif 480w, ../assets/media/809898ac-e92d-46ea-983e-8fe2d87ae889-b9ff86cf024a/800.avif 800w, ../assets/media/809898ac-e92d-46ea-983e-8fe2d87ae889-b9ff86cf024a/1200.avif 1200w" sizes="(min-width: 900px) 33vw, (min-width: 600px) 50vw, 100vw"><source type="image/webp" srcset="../assets/media/809898ac-e92d-46ea-983e-8fe2d87ae889-b9ff86cf024a/480.webp 480w, ../assets/media/809898ac-e92d-46ea-983e-8fe2d87ae889-b9ff86cf024a/800.webp 800w, ../assets/media/809898ac-e92d-46ea-983e-8fe2d87ae889-b9ff86cf024a/1200.webp 1200w" sizes="(min-width: 900px) 33vw, (min-width: 600px) 50vw, 100vw"><img src="../assets/media/809898ac-e92d-46ea-983e-8fe2d87ae889-b9ff86cf024a/1200.webp" alt="Beige guest cabin with a porch and shingled roof, framed by pines in warm evening light" width="1200" height="800" loading="lazy" decoding="async" data-media-id="809898ac-e92d-46ea-983e-8fe2d87ae889" data-max-width="1200" data-provenance="original" style="object-position:45% 50%;background-image:url(data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQBACdASoYABAAPu1orU2ppqSiMAgBMB2JZACsACDp56N1E3ValwYeYAD+oizvld4HcQW8xBbvPsFK3t1rw7tnV4iKDc+ui5avAjJBFzGP5zepy0ncwMDywIT4AwozUQAAAA==)"></picture>
+          <span class="tile__body">
+            <span class="tile__title">The Quad Cabins</span>
+            <span class="tile__cue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></span>
+          </span>
+        </a>
+      </li>
+      <li data-reveal="" style="--reveal-index: 1">
+        <a class="tile" href="#" data-unbuilt="1">
+          <picture><source type="image/avif" srcset="../assets/media/5448d3ab-22e1-4286-8b8f-04cc3d752808-0dd1ee213463/480.avif 480w, ../assets/media/5448d3ab-22e1-4286-8b8f-04cc3d752808-0dd1ee213463/800.avif 800w, ../assets/media/5448d3ab-22e1-4286-8b8f-04cc3d752808-0dd1ee213463/1200.avif 1200w, ../assets/media/5448d3ab-22e1-4286-8b8f-04cc3d752808-0dd1ee213463/1600.avif 1600w, ../assets/media/5448d3ab-22e1-4286-8b8f-04cc3d752808-0dd1ee213463/2400.avif 2400w, ../assets/media/5448d3ab-22e1-4286-8b8f-04cc3d752808-0dd1ee213463/3200.avif 3200w" sizes="(min-width: 900px) 33vw, (min-width: 600px) 50vw, 100vw"><source type="image/webp" srcset="../assets/media/5448d3ab-22e1-4286-8b8f-04cc3d752808-0dd1ee213463/480.webp 480w, ../assets/media/5448d3ab-22e1-4286-8b8f-04cc3d752808-0dd1ee213463/800.webp 800w, ../assets/media/5448d3ab-22e1-4286-8b8f-04cc3d752808-0dd1ee213463/1200.webp 1200w, ../assets/media/5448d3ab-22e1-4286-8b8f-04cc3d752808-0dd1ee213463/1600.webp 1600w, ../assets/media/5448d3ab-22e1-4286-8b8f-04cc3d752808-0dd1ee213463/2400.webp 2400w, ../assets/media/5448d3ab-22e1-4286-8b8f-04cc3d752808-0dd1ee213463/3200.webp 3200w" sizes="(min-width: 900px) 33vw, (min-width: 600px) 50vw, 100vw"><img src="../assets/media/5448d3ab-22e1-4286-8b8f-04cc3d752808-0dd1ee213463/1200.webp" alt="Studio suite with a king bed beneath abstract art beside a window" class="focus-top" width="3200" height="2400" loading="lazy" decoding="async" data-media-id="5448d3ab-22e1-4286-8b8f-04cc3d752808" data-max-width="3200" data-provenance="original" style="object-position:45% 50%;background-image:url(data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADwBACdASoYABIAPuVgqE2pJaQiMAwBIByJZQCdMy/B0oDrJUDZh7CjQOm++6eSzAAAyae1sTKRizzASpgo1nadVHmRjOdr2ENX1Tobu99iR3rYFDVPBCrKZbSzDnQqv34XnYFmczLYQa6z+l/94AAA)"></picture>
+          <span class="tile__body">
+            <span class="tile__title">The Single Suites</span>
+            <span class="tile__cue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></span>
+          </span>
+        </a>
+      </li>
+      <li data-reveal="" style="--reveal-index: 2">
+        <a class="tile" href="#" data-unbuilt="1">
+          <picture><source type="image/avif" srcset="../assets/media/b2111ac9-54d5-4725-a682-3b6712d0dfff-a69f0dc97a74/480.avif 480w, ../assets/media/b2111ac9-54d5-4725-a682-3b6712d0dfff-a69f0dc97a74/800.avif 800w, ../assets/media/b2111ac9-54d5-4725-a682-3b6712d0dfff-a69f0dc97a74/1200.avif 1200w, ../assets/media/b2111ac9-54d5-4725-a682-3b6712d0dfff-a69f0dc97a74/1600.avif 1600w, ../assets/media/b2111ac9-54d5-4725-a682-3b6712d0dfff-a69f0dc97a74/2400.avif 2400w, ../assets/media/b2111ac9-54d5-4725-a682-3b6712d0dfff-a69f0dc97a74/3200.avif 3200w" sizes="(min-width: 900px) 33vw, (min-width: 600px) 50vw, 100vw"><source type="image/webp" srcset="../assets/media/b2111ac9-54d5-4725-a682-3b6712d0dfff-a69f0dc97a74/480.webp 480w, ../assets/media/b2111ac9-54d5-4725-a682-3b6712d0dfff-a69f0dc97a74/800.webp 800w, ../assets/media/b2111ac9-54d5-4725-a682-3b6712d0dfff-a69f0dc97a74/1200.webp 1200w, ../assets/media/b2111ac9-54d5-4725-a682-3b6712d0dfff-a69f0dc97a74/1600.webp 1600w, ../assets/media/b2111ac9-54d5-4725-a682-3b6712d0dfff-a69f0dc97a74/2400.webp 2400w, ../assets/media/b2111ac9-54d5-4725-a682-3b6712d0dfff-a69f0dc97a74/3200.webp 3200w" sizes="(min-width: 900px) 33vw, (min-width: 600px) 50vw, 100vw"><img src="../assets/media/b2111ac9-54d5-4725-a682-3b6712d0dfff-a69f0dc97a74/1200.webp" alt="Cottage with a covered porch, two chairs and a stone path among pines beside the course in autumn" width="3200" height="2400" loading="lazy" decoding="async" data-media-id="b2111ac9-54d5-4725-a682-3b6712d0dfff" data-max-width="3200" data-provenance="original" style="object-position:50% 55%;background-image:url(data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADwAwCdASoYABIAPt1Yo02opSMiN/qoARAbiWUAzNAimU0EPenuRZAAAM4kgrGPOm3fFQlOBkIKjulifaLvMyoIAvtXQFGtSDec+MIsD76r6FPgRDM4XTs1jCkICh9rYjAqhFl8Qmo6BnCD40pH2AAA)"></picture>
+          <span class="tile__body">
+            <span class="tile__title">Couples Retreats</span>
+            <span class="tile__cue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></span>
+          </span>
+        </a>
+      </li>
+    </ul>
+    <div class="section-foot" data-reveal="">
+      <div class="button-row">
+        <a class="button button--ghost" href="#" data-unbuilt="1">View Accommodation Options</a>
+        <a class="button" href="https://direct-book.com/properties/woodensticksgolfclub" rel="noopener">Book Now</a>
+      </div>
+    </div>
+    <p class="editor-note">Confirm that each card photo shows that accommodation type (quad cabin, single suite and couples retreat), and supply brighter photos of the single suites and couples retreats; the current phone shots read dark under the card shade. The opening band now shows the course at evening; swap in a professional wide shot of the cabins facing the course if one becomes&nbsp;available.</p>
+  </div>
+</section>
+
+<section class="section" id="dining">
+  <div class="container">
+    <header class="section-head" data-reveal="">
+      <h2>Spectacular Dining&nbsp;— Unmatched&nbsp;Views</h2>
+      <p>Fairways Dining Room and its patio look out over the&nbsp;course.</p>
+    </header>
+    <ul class="tiles tiles--titles tiles--pair">
+      <li data-reveal="">
+        <a class="tile" href="#" data-unbuilt="1">
+          <picture><source type="image/avif" srcset="../assets/media/83fa9939-22c0-44e8-a4f7-70cfadf3b9a8-be56f70ab0e4/480.avif 480w, ../assets/media/83fa9939-22c0-44e8-a4f7-70cfadf3b9a8-be56f70ab0e4/800.avif 800w, ../assets/media/83fa9939-22c0-44e8-a4f7-70cfadf3b9a8-be56f70ab0e4/1200.avif 1200w, ../assets/media/83fa9939-22c0-44e8-a4f7-70cfadf3b9a8-be56f70ab0e4/1600.avif 1600w, ../assets/media/83fa9939-22c0-44e8-a4f7-70cfadf3b9a8-be56f70ab0e4/2400.avif 2400w, ../assets/media/83fa9939-22c0-44e8-a4f7-70cfadf3b9a8-be56f70ab0e4/3200.avif 3200w" sizes="(min-width: 600px) 50vw, 100vw"><source type="image/webp" srcset="../assets/media/83fa9939-22c0-44e8-a4f7-70cfadf3b9a8-be56f70ab0e4/480.webp 480w, ../assets/media/83fa9939-22c0-44e8-a4f7-70cfadf3b9a8-be56f70ab0e4/800.webp 800w, ../assets/media/83fa9939-22c0-44e8-a4f7-70cfadf3b9a8-be56f70ab0e4/1200.webp 1200w, ../assets/media/83fa9939-22c0-44e8-a4f7-70cfadf3b9a8-be56f70ab0e4/1600.webp 1600w, ../assets/media/83fa9939-22c0-44e8-a4f7-70cfadf3b9a8-be56f70ab0e4/2400.webp 2400w, ../assets/media/83fa9939-22c0-44e8-a4f7-70cfadf3b9a8-be56f70ab0e4/3200.webp 3200w" sizes="(min-width: 600px) 50vw, 100vw"><img src="../assets/media/83fa9939-22c0-44e8-a4f7-70cfadf3b9a8-be56f70ab0e4/1200.webp" alt="Clubhouse dining room with wooden tables, flowers and chandeliers before large windows onto green trees" width="3200" height="2400" loading="lazy" decoding="async" data-media-id="83fa9939-22c0-44e8-a4f7-70cfadf3b9a8" data-max-width="3200" data-provenance="original" style="object-position:50% 45%;background-image:url(data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABwBACdASoYABIAPu1eqU4ppKOiMBgMATAdiWMAsOwLJpCr+Lr0iZLCa7WTAAD5wwggjKyMQbJaY/3RkCIPi5UwwJ0F0pDc/gYkQYiiCG1y6i4J12bpTflD1t72KrMBqUAAAA==)"></picture>
+          <span class="tile__body">
+            <span class="tile__title">Fairways Dining Room</span>
+            <span class="tile__cue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></span>
+          </span>
+        </a>
+      </li>
+      <li data-reveal="" style="--reveal-index: 1">
+        <a class="tile" href="#" data-unbuilt="1">
+          <picture><source type="image/avif" srcset="../assets/media/1800f7cd-a4ac-4bdc-91c6-b439d3d471ab-eee3df0bc24b/480.avif 480w, ../assets/media/1800f7cd-a4ac-4bdc-91c6-b439d3d471ab-eee3df0bc24b/800.avif 800w, ../assets/media/1800f7cd-a4ac-4bdc-91c6-b439d3d471ab-eee3df0bc24b/1200.avif 1200w, ../assets/media/1800f7cd-a4ac-4bdc-91c6-b439d3d471ab-eee3df0bc24b/1600.avif 1600w, ../assets/media/1800f7cd-a4ac-4bdc-91c6-b439d3d471ab-eee3df0bc24b/2400.avif 2400w, ../assets/media/1800f7cd-a4ac-4bdc-91c6-b439d3d471ab-eee3df0bc24b/3200.avif 3200w" sizes="(min-width: 600px) 50vw, 100vw"><source type="image/webp" srcset="../assets/media/1800f7cd-a4ac-4bdc-91c6-b439d3d471ab-eee3df0bc24b/480.webp 480w, ../assets/media/1800f7cd-a4ac-4bdc-91c6-b439d3d471ab-eee3df0bc24b/800.webp 800w, ../assets/media/1800f7cd-a4ac-4bdc-91c6-b439d3d471ab-eee3df0bc24b/1200.webp 1200w, ../assets/media/1800f7cd-a4ac-4bdc-91c6-b439d3d471ab-eee3df0bc24b/1600.webp 1600w, ../assets/media/1800f7cd-a4ac-4bdc-91c6-b439d3d471ab-eee3df0bc24b/2400.webp 2400w, ../assets/media/1800f7cd-a4ac-4bdc-91c6-b439d3d471ab-eee3df0bc24b/3200.webp 3200w" sizes="(min-width: 600px) 50vw, 100vw"><img src="../assets/media/1800f7cd-a4ac-4bdc-91c6-b439d3d471ab-eee3df0bc24b/1200.webp" alt="Banquet hall set with round white-clothed tables and dark chairs beneath chandeliers" width="3200" height="2400" loading="lazy" decoding="async" data-media-id="1800f7cd-a4ac-4bdc-91c6-b439d3d471ab" data-max-width="3200" data-provenance="original" style="object-position:50% 55%;background-image:url(data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQBACdASoYABIAPu1gq02ppaQiMBgMATAdiWMArDNkARLHtb8B5VYt0E2CaGDJAAD5yR0O9TUHIqX3mDBX6CeF2khRJ6jSRbORPDZd4sGix8HgHecogUBz/BXA3wY3wRIwAA==)"></picture>
+          <span class="tile__body">
+            <span class="tile__title">Private Events</span>
+            <span class="tile__cue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></span>
+          </span>
+        </a>
+      </li>
+    </ul>
+    <p class="editor-note">Supply brighter photos of the dining room and the private events room; the current phone shots read dark under the card&nbsp;shade.</p>
+  </div>
+</section>
+
+<section class="eclub" id="e-club">
+  <div class="eclub__inner">
+    <div class="eclub__text" data-reveal="">
+      <h2>Join the Wooden Sticks&nbsp;E-Club</h2>
+      <p>Stay in the loop with the latest golf offers, seasonal packages, upcoming events, and news from Wooden Sticks Golf&nbsp;Club.</p>
+    </div>
+    <form class="eclub__form" method="post" data-reveal="" style="--reveal-index: 1" data-demo="1">
+      <label for="eclub-email">Email address</label>
+      <div class="eclub__row">
+        <input id="eclub-email" name="email" type="email" autocomplete="email" inputmode="email" required="" aria-describedby="eclub-consent eclub-status">
+        <button class="button" type="submit">Subscribe</button>
+      </div>
+      <p class="field__help" id="eclub-consent">We use your email only to send E-Club news, and you can unsubscribe at any time. Read our <a href="#" data-unbuilt="1">privacy policy</a>.</p>
+      <p class="form-status" id="eclub-status" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="site-footer"><div class="footer-inner"><div class="ornament" aria-hidden="true"><svg viewBox="0 0 24 32" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 29V3l11 4.5L9 12"/><path d="M4 29h10"/></svg></div><div class="footer-grid"><div class="footer-brand"><img class="footer-logo" src="../assets/brand/logo-on-dark.png" alt="Wooden Sticks Golf Club" width="174" height="142"><p class="footer-tagline">Eighteen holes inspired by the game's great courses, open to the public in Uxbridge, Ontario.</p><a class="button footer-cta" href="#" data-unbuilt="1">Book a Tee Time</a><nav class="footer-social" aria-label="Wooden Sticks Golf Club on social media"><ul><li><a href="https://www.facebook.com/woodensticksgolf/" rel="noopener">Facebook</a></li><li><a href="https://www.instagram.com/woodensticksgolf/" rel="noopener">Instagram</a></li><li><a href="http://twitter.com/WoodenSticks" rel="noopener">X</a></li><li><a href="https://www.youtube.com/channel/UCcVe-uCj4KgaiHdW523tRzw" rel="noopener">YouTube</a></li><li><a href="https://www.tripadvisor.ca/Attraction_Review-g984010-d3382463-Reviews-Wooden_Sticks_Golf_Course-Uxbridge_Ontario.html" rel="noopener">Tripadvisor</a></li></ul></nav></div><nav class="footer-nav" aria-label="Footer"><h2 class="footer-heading">Explore</h2><ul><li><a href="#" data-unbuilt="1">Golf</a></li><li><a href="../the-course/index.html">The Course</a></li><li><a href="#" data-unbuilt="1">Accommodations</a></li><li><a href="#" data-unbuilt="1">Dining</a></li><li><a href="#" data-unbuilt="1">Golf Events</a></li><li><a href="#" data-unbuilt="1">About</a></li></ul></nav><nav class="footer-nav" aria-label="More"><h2 class="footer-heading">More</h2><ul><li><a href="../golf/green-fee-rates/index.html">Golf Rates</a></li><li><a href="#" data-unbuilt="1">Cabins &amp; Suites</a></li><li><a href="#" data-unbuilt="1">Private Events</a></li><li><a href="#" data-unbuilt="1">Tournaments</a></li><li><a href="#" data-unbuilt="1">Group Packages</a></li><li><a href="#" data-unbuilt="1">Contact &amp; Hours</a></li><li><a href="#" data-unbuilt="1">Join the E-Club</a></li></ul></nav><div class="footer-contact"><h2 class="footer-heading">Contact</h2><address><p>Uxbridge, ON</p><p><a href="tel:+19058524379">+1-905-852-4379</a></p></address></div></div><div class="footer-legal"><p>© 2026 Wooden Sticks Golf Club</p><nav class="footer-legal-links" aria-label="Legal"><ul><li><a href="#" data-unbuilt="1">Privacy policy</a></li><li><a href="#" data-unbuilt="1">Accessibility</a></li></ul></nav></div></div></footer>
+<script src="../assets/config.js"></script><script src="../assets/preview.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>
